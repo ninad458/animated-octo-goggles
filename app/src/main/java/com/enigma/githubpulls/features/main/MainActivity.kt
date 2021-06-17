@@ -23,12 +23,9 @@ class MainActivity : AppCompatActivity() {
         viewModel.pulls.observe(this, {
         })
 
-        viewModel.loading.observe(this, {
-            binding.progressBar.isVisible = it
+        viewModel.loading.observe(this, { loading ->
+            binding.progressBar.isVisible = loading
+            binding.list.isVisible = !loading || binding.list.childCount > 0
         })
-    }
-
-    companion object {
-        private const val TAG = "MainActivity"
     }
 }
