@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
 interface GithubService {
-    @GET("repos/ninad458/SocialMedia/pulls?state=closed")
+    @GET("repos/ninad458/animated-octo-goggles/pulls?state=closed")
     suspend fun getPullRequests(): List<PullRes>
 
     companion object{
