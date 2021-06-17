@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GithubPulls</string>
+    <string name="created_at">Created At</string>
+    <string name="closed_at">Closed at</string>
 </resources>
