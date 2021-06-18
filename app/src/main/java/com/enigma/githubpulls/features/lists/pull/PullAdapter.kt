@@ -3,7 +3,7 @@ package com.enigma.githubpulls.features.lists.pull
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.enigma.githubpulls.databinding.ItemPullBinding
+import com.enigma.githubpulls.R
 import com.enigma.githubpulls.model.pull.Pull
 
 class PullAdapter : RecyclerView.Adapter<PullViewHolder>() {
@@ -12,7 +12,7 @@ class PullAdapter : RecyclerView.Adapter<PullViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PullViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return PullViewHolder(ItemPullBinding.inflate(inflater, parent, false))
+        return PullViewHolder(inflater.inflate(R.layout.item_pull, parent, false))
     }
 
     override fun onBindViewHolder(holder: PullViewHolder, position: Int) {
